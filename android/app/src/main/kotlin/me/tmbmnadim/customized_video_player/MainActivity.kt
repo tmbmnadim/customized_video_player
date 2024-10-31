@@ -1,4 +1,4 @@
-package com.example.customized_video_player
+package me.tmbmnadim.customized_video_player
 
 import io.flutter.embedding.android.FlutterActivity
 

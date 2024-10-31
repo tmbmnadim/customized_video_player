@@ -1,0 +1,4 @@
+enum CustomAlignment {
+  top,
+  bottom,
+}
