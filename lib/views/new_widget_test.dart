@@ -1,4 +1,6 @@
 import 'package:customized_video_player/widgets/nijesso/product_list_horizontal.dart';
+import 'package:customized_video_player/widgets/nijesso/simple_product_banner.dart';
+import 'package:customized_video_player/widgets/nijesso/text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -33,18 +35,11 @@ class _WidgetTestScreenState extends State<WidgetTestScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            ProductListHorizontal(
-              productList: productCount,
-            ),
-            Slider(
-              value: productCount.toDouble(),
-              min: 1,
-              max: 10,
-              divisions: 9,
-              onChanged: (value) {
-                productCount = value.toInt();
-                setState(() {});
-              },
+            ProductBanner(
+              image: 'assets/image/a.jpg',
+              title: 'Product Title',
+              buttonText: 'View Details',
+              onTap: () {},
             ),
           ],
         ),
